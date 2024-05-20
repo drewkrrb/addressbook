@@ -7,6 +7,10 @@
 5. Latest Generalized Splat Operator - Returns the List
 */
 
+output "instance_pub_ip" {
+  value = aws_instance.myec2vm.public_ip
+}
+
 # Output - For Loop with List
 output "for_output_list" {
   description = "For Loop with List"
